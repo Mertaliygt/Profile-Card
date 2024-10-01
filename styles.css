@@ -1,0 +1,117 @@
+/* Genel Stil Ayarları */
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #007bff, #ffffff); /* Soldan koyu mavi, sağa doğru beyaz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ADD8E6 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(216, 108, 108, 0.1);
+    max-width: 400px;
+    width: 100%;
+
+   
+}
+.job-title {
+
+    font-style: italic;
+    display: inline-block;
+    padding: 5px 5px;
+    border: 2px solid #007bff;
+    border-radius: 7px;
+   
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ddd;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.job-title {
+    font-size: 8px;
+    color: #555;
+}
+
+.divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.resume {
+    text-align: center; /* Metin hizalamasını ortala */
+    margin: 20px 0; /* Üst ve alt boşluk */
+    padding: 10px;
+    border: 2px solid #007bff; /* Mavi çerçeve */
+    border-radius: 15px; /* Yuvarlatılmış köşeler */
+    background-color: #e7f1ff; /* Açık mavi arka plan */
+}
+
+.skills {
+    text-align: center; /* Metin hizalamasını ortala */
+    margin: 20px 0; /* Üst ve alt boşluk */
+}
+
+.skills h2 {
+    margin-bottom: 5px; /* Alt başlık için boşluk */
+}
+
+.skills ul {
+    list-style-type: disc; /* Noktalı liste stili */
+    padding-left: 20px; /* Soldan iç boşluk */
+}
+
+.pdf-section {
+    margin: 10px 0; /* Üst ve alt boşluk */
+}
+
+.pdf-link {
+    text-decoration: none; /* Altı çiziliyi kaldır */
+    color: #007bff; /* Link rengi */
+    font-weight: bold; /* Kalın yazı */
+}
+
+.pdf-link:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde altını çizer */
+}
+
+.social-icons {
+    margin: 20px 0; /* Üst ve alt boşluk */
+}
+
+.social-icons a {
+    margin: 0 10px; /* İkonlar arası boşluk */
+    font-size: 24px; /* İkon boyutu */
+    color: #333; /* İkon rengi */
+    text-decoration: none; /* Altı çiziliyi kaldır */
+}
+
+footer {
+    margin-top: 20px; /* Üstten boşluk */
+    font-size: 14px; /* Yazı boyutu */
+    color: #777; /* Yazı rengi */
+}
