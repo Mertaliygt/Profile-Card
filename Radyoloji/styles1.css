@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #964a6d, #ecf0f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+/* Arka plan yazısı için stil */
+.background-text {
+    font-size: 0.9em;
+    color: #666262; /* Siyah renk */
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-style: initial;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
+    padding-bottom: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Kartın içindeki boşlukları artırdık */
+.card > * {
+    margin-bottom: 20px; /* Genel olarak elemanlar arasında boşluk */
+}
+
+/* Profil resmini büyüttük */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+.details {
+    font-size: 1.2em;
+    border: 1px solid #dfe6e9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+/* İstanbul ve konum ikonu ekledik */
+.location {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #363f46;
+}
+
+/* Konum ikonu */
+.location i {
+    margin-right: 10px; /* İkon ile metin arasına boşluk ekliyoruz */
+    color: #964a6d;
+}
+
+/* İstanbul'da hastanızı kısmı çerçeve içinde */
+.info-box {
+    border: 2px solid #dfe6e9;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Evde yapılmasını istediğiniz kısmı çerçeveli ve küçültülmüş */
+.contact-info-box {
+    border: 2px solid #000000;
+    padding: 15px;
+    margin-bottom: 40px;
+    font-size: 1.0em;
+    border-radius: 10px;
+    color:#000000 ; 
+}
+
+.contact-info-box p {
+    margin-bottom: 15px;
+}
+
+/* Telefon bağlantısı için stil */
+.phone-link {
+    font-family: 'Times New Roman', Times, serif, ; /* Yazı tipini Georgia olarak değiştirdik */
+    font-style: normal; /* Italik yerine normal stil */
+    text-decoration: none; /* Çizgi kaldırıldı */
+    color: #964a6d; /* Mevcut renk */
+    font-weight: bold;
+}
+
+.phone-link:hover {
+    color: #0b1013; /* Hover sırasında koyulaşan koyu renk */
+}
+
+
+/* Sosyal medya ikonlarına çember ekledik */
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 8px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #964a6d;
+    border-color: #964a6d;
+}
+
+/* "Diğer iletişim yöntemleri" silik yazısı */
+.additional-contact {
+    font-size: 0.9em;
+    color: rgba(27, 23, 23, 0.3); /* Silik efekt için */
+    margin-top: 20px;
+}
+
+/* Responsive tasarım için medya sorgusu */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
